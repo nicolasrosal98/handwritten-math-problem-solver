@@ -2,7 +2,7 @@ import { Suspense, useRef } from "react";
 import "./css/App.css";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Model from "./utils/GLTFModel";
+import Model from "./utils/models/GLTFModel";
 
 function App(): JSX.Element {
   const Calculator = () => {
