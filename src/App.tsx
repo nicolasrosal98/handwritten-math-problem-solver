@@ -1,20 +1,18 @@
 import { Suspense, useRef } from "react";
-import './css/App.css';
-import { Canvas,  useFrame } from '@react-three/fiber';
+import "./css/App.css";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Model from './utils/GLTFModel'
-
+import Model from "./utils/GLTFModel";
 
 function App(): JSX.Element {
-
   const Calculator = () => {
     const mesh = useRef<THREE.Mesh>();
 
     useFrame(() => {
       if (mesh.current !== undefined) {
-        mesh.current.rotation.x += 0.01
+        mesh.current.rotation.x += 0.01;
       }
-    })
+    });
 
     return (
       <mesh ref={mesh}>
@@ -48,5 +46,5 @@ function App(): JSX.Element {
 export default App;
 
 // onCreated={({ gl }) => {
-    //   gl.setClearColor("#FFFFFF");
-    // }}
+//   gl.setClearColor("#FFFFFF");
+// }}
