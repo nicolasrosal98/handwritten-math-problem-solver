@@ -6,3 +6,7 @@ canvas {
   width: 1280px;
   height: 720px;
 }
+
+Text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
